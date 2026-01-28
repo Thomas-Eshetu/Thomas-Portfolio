@@ -40,7 +40,7 @@ export const About = () => {
                         <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
                             Assembling the future,
                             <span className="font-serif italic font-normal text-white">
-
+                                {" "}
                                 piece by piece.</span>
                         </h2>
 
@@ -62,10 +62,10 @@ export const About = () => {
 
                         <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
                             <p className="text-lg font-medium italic text-foreground">
-                                Building digital solutions
+                                "Building digital solutions
                                 through clean code and smart systems
                                 with precision at every layer.
-                                From concept to deployment.
+                                From concept to deployment."
                             </p>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ export const About = () => {
                     <div className="grid sm:grid-cols-2 gap-6">
                         {highlights.map((item, idx) => (
                             <div key={idx} className="glass p-6 rounded-2xl animate-fade-in"
-                            style={{animationDelay: `${(idx + 1) * 100}ms`}}>
+                                style={{ animationDelay: `${(idx + 1) * 100}ms` }}>
                                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 hover:bg-primary/20">
                                     <item.icon className="w-6 h-6 text-primary" />
                                 </div>
