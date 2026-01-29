@@ -1,4 +1,6 @@
 import { ArrowUpRight, Github } from "lucide-react";
+import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+
 
 const projects = [
     {
@@ -100,8 +102,7 @@ export const Projects = () => {
                                     <h3>
                                         {project.title}
                                     </h3>
-                                    <ArrowUpRight
-                                        className="w-5 h-5 text-muted-foreground group-hover:text-primary
+                                    <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary
                                     group-hover:translate-x-1
                                     group-hover:-translate-y-1 transition-all"
                                     />
@@ -111,7 +112,9 @@ export const Projects = () => {
                                 </p>
                                 <div className="flex flex-wrap gap-2">
                                     {project.tags.map((tag, tagIdx) => (
-                                        <span className="px-4 py-1.5 rounded-full bg-surface">
+                                        <span 
+                                        key={tagIdx}
+                                        className="px-4 py-1.5 rounded-full bg-surface text-xs font-medium border border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300">
                                             {tag}
                                             </span>
                                     ))}
@@ -119,6 +122,14 @@ export const Projects = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                {/**View All CTA */}
+                <div className="text-center mt-12 animate-fade-in animation-delay-500">
+                    <AnimatedBorderButton>
+                        View All Projects
+                        <ArrowUpRight className="w-5 h-5" />
+                    </AnimatedBorderButton>
                 </div>
             </div>
         </section>

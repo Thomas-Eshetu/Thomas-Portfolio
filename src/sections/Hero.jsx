@@ -1,6 +1,6 @@
 import { Button } from "@/components/Button";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
-import { ArrowRight, ChevronDown, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowRight, Download, ChevronDown, Github, Linkedin, Twitter } from "lucide-react";
 
 const skills = [
     "HTML5", "CSS", "JAVASCRIPT", "REACT", "PHP", "CODEIGNITER", "LARAVEL",
@@ -71,7 +71,10 @@ export const Hero = () => {
                             Contact Me <ArrowRight className="w-5 h-5" />
                         </Button>
 
-                        <AnimatedBorderButton />
+                        <AnimatedBorderButton>
+                            <Download />
+                            Download CV
+                        </AnimatedBorderButton>
                     </div>
 
                     {/**Social Links */}
@@ -137,7 +140,7 @@ export const Hero = () => {
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
             <a href="#about"
-            className="flex flex-col items-center gap-3 text-muted-foreground hover:text-primary">
+                className="flex flex-col items-center gap-3 text-muted-foreground hover:text-primary">
                 <span className="text-xs uppercase tracking-wider">Scroll</span>
                 <ChevronDown className="w-6 h-6 animate-bounce" />
             </a>
