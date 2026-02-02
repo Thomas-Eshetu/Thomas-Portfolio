@@ -25,7 +25,7 @@ const testimonials = [
     },
     {
         quote:
-            "Working with Thomas was a great experience. He built a robust, scalable web application that was easy to use, secure, and designed to grow with our needs.",
+            "Working with Thomas was a great experience. He built a robust, scalable web application that was easy to use, secure, and designed to grow with user needs.",
         author: "Amanuel Kassahun",
         role: "Work Colleague.",
         avater: "/t1.jpg",
