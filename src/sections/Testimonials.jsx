@@ -11,16 +11,16 @@ const testimonials = [
     },
     {
         quote:
-            "Testimonial 2.",
-        author: "Zerihun Fikadu",
-        role: "Founder and CEO of Ethio Dream Draw.",
+            "Thomas developed my personal portfolio into a stunning, high-performance platform that is both robust and fully SEO-optimized. It features a seamless user experience, fast load times, and a modern design that effectively showcases my skills and projects, leaving a lasting impression on visitors.",
+        author: "Biruk Eshetu",
+        role: "Private Client.",
         avater: "/t1.jpg",
     },
     {
         quote:
-            "Testimonial 3.",
-        author: "Zerihun Fikadu",
-        role: "Founder and CEO of Ethio Dream Draw.",
+            "Thomas combines exceptional development expertise with innovative ideas, delivering projects that are both creative and technically robust. On top of that, his IT support skills are outstanding, ensuring seamless system operations and reliable technical solutions.",
+        author: "Dessie Fikir",
+        role: "Work Partner",
         avater: "/t1.jpg",
     },
     {
